@@ -5,6 +5,12 @@ import { ContentRenderer } from './components/ContentRenderer';
 import { ErrorAlert } from './components/ErrorAlert';
 import { EditForm } from './components/EditForm';
 
+// Set API base URL based on environment
+const API_BASE_URL = 
+  process.env.NODE_ENV === 'production'
+    ? 'https://content-block-generator-backend.onrender.com/' 
+    : 'http://localhost:5001';
+
 function App() {
   const [content, setContent] = useState(null);
   const [error, setError] = useState(null);
@@ -16,7 +22,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await axios.post('/api/generate', {
+      const response = await axios.post(`${API_BASE_URL}/api/generate`, {
         businessDescription,
       });
 
@@ -45,7 +51,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await axios.post('/api/edit', {
+      const response = await axios.post(`${API_BASE_URL}/api/edit`, {
         currentContent: content,
         blockType,
         editInstruction: instruction,
