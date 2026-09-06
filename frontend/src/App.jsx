@@ -8,7 +8,7 @@ import { EditForm } from './components/EditForm';
 // Set API base URL based on environment
 const API_BASE_URL = 
   process.env.NODE_ENV === 'production'
-    ? 'https://content-block-generator-backend.onrender.com/' 
+    ? 'https://content-block-generator-backend.onrender.com' 
     : 'http://localhost:5001';
 
 function App() {
