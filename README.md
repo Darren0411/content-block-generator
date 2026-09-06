@@ -257,3 +257,9 @@ Darren - Computer Engineering Student, MERN Stack Developer
 
 **Last Updated**: September 2026
 **Current Phase**: Phase 3 Complete, Phase 4 In Progress
+
+## 🎯 Live Demo
+
+- **🌐 Frontend (Live)**: https://frontend-sable-tau-56.vercel.app/
+- **⚙️ Backend API (Live)**: https://content-block-generator-backend.onrender.com
+- **📦 GitHub Repository**: https://github.com/Darren0411/content-block-generator.git
